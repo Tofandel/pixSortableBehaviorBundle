@@ -43,7 +43,7 @@ In order to use a draggable list instead of up/down buttons, change the template
             ->add('_action', null, array(
                 'actions' => array(
                     'move' => array(
-                        'template' => 'AppBundle:Admin:_sort_drag_drop.html.twig',
+                        'template' => 'PixSortableBehaviorBundle:Default:_sort_drag_drop.html.twig',
                         'enable_top_bottom_buttons' => true, //optional
                     ),
                 ),
@@ -53,9 +53,9 @@ In order to use a draggable list instead of up/down buttons, change the template
 ```    
 Also include the JavaScript needed for this to work, in your ```theme.yml``` file, add these two lines:
 ```yml
-    //...
+    #...
     javascripts:
-        - bundles/pixsortablebehavior/js/jquery-ui.min.js // if you haven't got jQuery UI yet.
+        - bundles/pixsortablebehavior/js/jquery-ui.min.js # if you haven't got jQuery UI yet.
         - bundles/pixsortablebehavior/js/init.js
 ```
 
@@ -78,8 +78,8 @@ pixSortableBehaviorBundle.error
             ->add('_action', null, array(
                 'actions' => array(
                     'move' => array(
-                        'template' => 'AppBundle:Admin:_sort.html.twig',
-                        'enable_top_bottom_buttons' => true,
+                        'template' => 'PixSortableBehaviorBundle:Default:_sort.html.twig',
+                        'enable_top_bottom_buttons' => false,
                     ),
                 ),
             ))
